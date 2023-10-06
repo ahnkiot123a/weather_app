@@ -221,7 +221,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Positioned(
-                    top: 20,
+                    top: 10,
                     right: 20,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -246,6 +246,26 @@ class _HomeState extends State<Home> {
                           ),
                         )
                       ],
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 6,
+                    right: 20,
+                    child: Container(
+                      width: 140,
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          weatherItem(
+                            text: 'Wind Speed',
+                            value: windSpeed,
+                            unit: 'km/h',
+                            imageUrl: 'assets/windspeed.png',
+                          ),
+                          weatherItem(text: 'Humidity', value: humidity, unit: '%', imageUrl: 'assets/humidity.png'),
+                        ],
+                      ),
                     ),
                   ),
                 ],

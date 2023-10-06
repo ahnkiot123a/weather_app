@@ -16,16 +16,10 @@ class weatherItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(text, style: const TextStyle(
-          color: Colors.black54,
-        ),),
-        const SizedBox(
-          height: 8,
-        ),
         Container(
           padding: const EdgeInsets.all(10.0),
-          height: 60,
-          width: 60,
+          height: 50,
+          width: 50,
           decoration: const BoxDecoration(
             color: Color(0xffE0E8FB),
             borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -37,7 +31,7 @@ class weatherItem extends StatelessWidget {
         ),
         Text(value.toString() + unit, style: const TextStyle(
           fontWeight: FontWeight.bold,
-        ),)
+        ),),
       ],
     );
   }
